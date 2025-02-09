@@ -190,8 +190,8 @@ const Projects = () => {
                 title='Portfolio'
                 description='portfolio is a website for show my projects'
                 imgUrl={portfolio}
-                gitUrl='https://github.com/Ahmed-Gehad/ahmedGehadPortfolio'
-                previewUrl='https://ahmed-gehad-portfolio-3rvd.vercel.app/'
+                gitUrl='https://github.com/Ahmed-Gehad/Portfolio'
+                previewUrl='https://portfolio-two-gray-83.vercel.app/'
               />
               {/* ))} */}
             </div>
