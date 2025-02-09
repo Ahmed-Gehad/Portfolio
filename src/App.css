@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Titillium Web", serif;
+}
+:root{
+    /* colors  */
+    --color-text: #fff;
+    --color-primary:  #19376d;
+    --color-secondary: #19376d;
+    --color-dark: #0b2447;
+    --color-bg: #04152d;
+    --scond-color: #ff511a;
+}
+
+body{
+    background-color: var(--color-bg);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.motionBtn {
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+.line{
+    width: 70px;
+    height: 3px;
+    background-color: var(--color-primary);
+}
+.darkline{
+    width: 70px;
+    height: 3px;
+    background-color: var(--color-bg);
+}
+.text-orange{
+    color: var(--scond-color);
+}
+
+/* start navBar */
+  .navBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--color-bg);
+
+  }
+  .navBar img{
+    background-color: none;
+  }
+  .navbar-toggler {
+    background-color: white;
+    border: none;
+  }
+ .link:hover{
+    color: var(--scond-color) !important;
+}
+
+/* end navBar */
+
+/* Start Landing */
+ .Landing{
+     background-color: var(--color-primary);
+ }
+
+/* end Landing */
+
+/* Start about  */
+.about img{
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    transition: all 0.5s ease-in-out;
+    filter: brightness(0.7);
+}
+@keyframes floating {
+    0% { transform: translate(0, 0px); }
+    50% { transform: translate(0, 20px); }
+    100% { transform: translate(0, 0px); }
+}
+.about img:hover{
+    filter: brightness(.9);
+}
+/* end about  */
+
+/* Start Experience  */
+
+.experience{
+    background-color: var(--color-primary);
+    
+}
+.experience i{
+    background-color: var(--color-bg);
+    padding: 20px;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+.experience i:hover{
+    background-color:transparent;
+   cursor: pointer;
+   scale: 1.1;
+}
+.experience .html:hover i{
+color: orangered;
+}
+.experience .css:hover i{
+color: blue;
+}
+.experience .js:hover i{
+color: yellow;
+}
+.experience .react:hover i{
+color: rgb(86, 193, 235);
+}
+.experience .github:hover i{
+    color: black;
+}
+.experience .figma:hover i{
+    color: black;
+}
+.experience .bootstrap:hover i{
+    color: #632db4;
+}
+
+.experience .experience-info{
+    background: linear-gradient(to top,  var(--color-bg) 0%, var(--color-bg) 40%, transparent );  
+}
+
+/* end Experience  */
+
+
+
+
+/* Start project  */
+.group{
+    position: relative;
+}
+.group img{
+    height: 250px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: black;
+    opacity: 0;
+   overflow: hidden;
+   
+}
+.group:hover .overlay{
+    opacity: .8;
+    cursor: pointer;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+    background: opacity(.1 , black);
+    transition: all 0.5s ease-in-out;
+}
+.group i{
+    transition: all 0.5s ease-in-out;
+}
+.group i:hover{
+    color:var(--scond-color);
+}
+
+
+
+
+/* end project   */
+/* Start Contact   */
+
+.Contact{
+    background-color: var(--color-primary);
+}
+
+ .InfoContact .info{
+    transition: all 0.5s ease-in-out;
+ }
+ .InfoContact .info:hover{
+    color:var(--scond-color);
+    cursor: pointer;
+ }
+
+/* end Contact    */
+/* start footer  */
+.social-media{
+margin-left: auto;
+
+}
+ .social-media a{
+transition: all 0.5s ease-in-out;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 10px;
+ }
+ .social-media a:hover{
+color: var(--scond-color);
+    border: 1px solid var(--scond-color);
+ }
+ /* end footer  */
