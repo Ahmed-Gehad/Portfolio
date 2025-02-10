@@ -14,7 +14,7 @@ const About = () => {
             <Container>
                 <Row>
                     <Col lg={12} className='text-center '>
-                        <h1 className='fw-bold text-orange'>About Me</h1>
+                        <h1 className=' text-orange font-bold text-4xl'>About Me</h1>
                         <div className="line my-4 mx-auto"></div>
                     </Col>
                     <Col lg={7} className='py-4' >
@@ -34,10 +34,10 @@ const About = () => {
                             }}
                             viewport={{ once: true }}
                         >
-                            <h1 className='fw-bold py-3'>
+                            <h1 className='font-bold text-3xl py-3'>
                                 I'm a Passionate Web Developer
                             </h1>
-                            <p className='lead fs-4 w-75'>
+                            <p className='font-thin text-xl w-75'>
                                 I'm a developer & designer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional results while working with me. Delivering work within time and budget which meets client’s requirements is our moto.
                             </p>
                         </motion.div>

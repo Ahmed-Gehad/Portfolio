@@ -10,6 +10,7 @@ import Contact from './Component/Contact';
 import Footer from './Component/Footer';
 import { ScaleLoader } from 'react-spinners';
 
+
 function App() {
 
   const [loading, setLoading] = useState(false);

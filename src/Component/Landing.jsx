@@ -16,13 +16,13 @@ const Landing = () => {
             <Container>
                 <Row className='d-flex  align-items-center pt-5'>
                     <Col lg={6} className='mt-5 pt-5'>
-                        <h1 >Hi, I'm Ahmed Gehad
+                        <h1  className='font-bold text-4xl'>Hi, I'm Ahmed Gehad
                         </h1>
-                        <h2 className='py-3'>
+                        <h2 className='py-3 font-bold text-3xl'>
                             <TypeAnimation
                                 sequence={[
                                     'Front-end Developer',
-                                    1000, 
+                                    1000,
                                     'Front-end Disigner',
                                     1000,
                                 ]}
@@ -32,20 +32,21 @@ const Landing = () => {
                                 repeat={Infinity}
                             />
                         </h2>
-                        <p className='lead fs-2'>with 2+ years of experience
+                        <p className='font-mono mb-3'>with 2+ years of experience
                             <br />
                             using React.
                             <br />
                             Reach out if you'd like to learn more!
                         </p>
+                      
 
                         <motion.button
                             whileTap={{ scale: 0.65 }} className='motionBtn'>
-                            <Button href='#Contact' className=' fs-5 btn btn-success' >Contact Me</Button>
+                            <Button href='#Contact' className='   btn-success' >Contact Me</Button>
                         </motion.button>
                     </Col>
-                    <Col lg={6} className=' py-5 text-center'>
-                        <img src={me} alt="" className='img  rounded-5 w-50  my-4' />
+                    <Col lg={6} className=' py-5 text-center '>
+                        <img src={me} alt="" className='img  rounded-5 w-80  my-4' />
                     </Col>
                 </Row>
             </Container>

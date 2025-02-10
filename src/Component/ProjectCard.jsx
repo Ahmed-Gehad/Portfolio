@@ -2,23 +2,33 @@ import React from 'react'
 
 import { Link } from 'react-router-dom';
 
-const ProjectCard = (project) => {
+const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
     return (
         <div >
-            <div className='group' >
-                <img src={project.imgUrl} alt={project.title} className='rounded-4 w-100'   />
-                <div className='overlay'>
-                    <Link to={project.gitUrl} target='_blank'>
-                    <i class="fa-solid fa-code pe-5 fs-4" title="hover text"></i>
+            <div
+                className='h-52 md:h-72  rounded-xl relative group mx-2'
+                style={{
+                    backgroundImage: `url(${imgUrl})`, backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat"
+                }}
+            >
+                <div className='overlay absolute top-0 left-0 w-full h-full bg-[#181818]  rounded
+                                bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-700 '>
+                    <Link to={gitUrl} target='_blank'>
+                        <i class="fa-solid fa-code pe-5 fs-4" title="hover text"></i>
                     </Link>
-                    <Link to={project.previewUrl} target='_blank'>
-                    <i class="fa-regular fa-eye fs-4"></i>
+                    <Link to={previewUrl} target='_blank'>
+                        <i class="fa-regular fa-eye fs-4"></i>
                     </Link>
                 </div>
+
             </div>
-            <div className='text-white  mt-3'>
-                <h5 className='fw-bold fs-3 mb-3 text-orange'>{project.title}</h5>
-                <p className='lead w-100'>{project.description}</p>
+
+
+            <div className='text-white   rounded-b-xl  py-6 px-2'>
+                <h5 className='font-semibold text-2xl mb-3 text-orange'>{title}</h5>
+                <p className='text-gray-300 w-100'>{description}</p>
             </div>
         </div>
     )

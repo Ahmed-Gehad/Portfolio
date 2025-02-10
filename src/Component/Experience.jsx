@@ -12,7 +12,7 @@ const Experience = () => {
             <Container>
                 <Row>
                     <Col lg={12} className='text-center '>
-                        <h1 className='fw-bold mt-5 text-orange'>Experience</h1>
+                        <h1 className='font-bold text-4xl mt-5 text-orange '>Experience</h1>
                         <div className="darkline my-4 mx-auto"></div>
                     </Col>
 
