@@ -30,8 +30,8 @@ const projectsData = [
     description: "coffee is a website for buying and selling coffee online",
     image: coffee,
     tag: ["All", "React"],
-    gitUrl: "",
-    previewUrl: ""
+    gitUrl: "https://github.com/Ahmed-Gehad/coffee",
+    previewUrl: "https://coffee-ashen-eta.vercel.app/"
   },
   {
     id: 11,
