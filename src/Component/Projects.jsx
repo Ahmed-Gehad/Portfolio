@@ -154,7 +154,7 @@ const Projects = () => {
       <h2 className='text-center text-4xl font-bold text-orange mt-4 '>My Projects</h2>
       <div className="line my-4 mx-auto"></div>
 
-      <div className='text-white flex flex-row justify-center items-center gap-1 py-9'>
+      <div className='text-white flex flex-row justify-center items-center  py-9 '>
         <ProjectTag
           onClick={handleTagChange}
           name="All"
