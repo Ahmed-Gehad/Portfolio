@@ -17,6 +17,7 @@ import {
   mexant,
   newHome,
   coffee,
+  amazon,
 } from '../../src/imges/projects';
 
 
@@ -24,6 +25,15 @@ import {
 
 
 const projectsData = [
+  {
+    id: 13,
+    title: "Amazon",
+    description: "Amazon is a website for buying and selling online",
+    image: amazon,
+    tag: ["All", "React"],
+    gitUrl: "https://github.com/Ahmed-Gehad/Amazon",
+    previewUrl: "https://amazon-five-henna.vercel.app/"
+  },
   {
     id: 12,
     title: "Coffee",
