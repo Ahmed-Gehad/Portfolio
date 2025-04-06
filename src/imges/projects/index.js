@@ -10,6 +10,7 @@ import stopwatch from './stopwatch.png'
 import mexant from './mexant.png'
 import newHome from './new-home.png'
 import coffee from './coffee.jpg'
+import amazon from './amazon.jpg'
 
 
 
@@ -26,4 +27,5 @@ export {
     mexant,
     newHome,
     coffee,
+    amazon,
 };
