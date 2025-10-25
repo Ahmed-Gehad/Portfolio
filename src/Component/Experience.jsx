@@ -1,74 +1,99 @@
-import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import goCode from "../imges/code.jpg"
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import goCode from "../imges/mern.png";
+import Tailwind from "../imges/Tailwind.png";
+import TypeScript from "../imges/typescript.png";
+import { Zoom } from "react-awesome-reveal";
 
-// import react awesome
-// for run npm i @emotion/react and npm i react-awesome-reveal
-import { Zoom } from 'react-awesome-reveal';
+// Import additional images (assumed to exist in the imges folder)
+import Html from "../imges/html.jpg";
+import Css from "../imges/css.jpg";
+import ReactImg from "../imges/react.png";
+import Github from "../imges/github.jpg";
+import Bootstrap from "../imges/bootstrap.jpg";
+import Figma from "../imges/figma.png";
+import Vite from "../imges/vite.jpg";
+import Nextjs from "../imges/nextjs.png";
 
 const Experience = () => {
-    return (
-        <div className='experience text-white px-4' id='Experience'>
-            <Container>
-                <Row>
-                    <Col lg={12} className='text-center '>
-                        <h1 className='font-bold text-4xl mt-5 text-orange '>Experience</h1>
-                        <div className="darkline my-4 mx-auto"></div>
-                    </Col>
+  const skills = [
+    { image: Html, name: "HTML" },
+    { image: Css, name: "CSS" },
+    { image: ReactImg, name: "React" },
+    { image: Github, name: "GitHub" },
+    { image: Bootstrap, name: "Bootstrap" },
+    { image: Figma, name: "Figma" },
+    { image: Vite, name: "Vite" },
+    { image: Nextjs, name: "Next.js" },
+    { image: Tailwind, name: "Tailwind CSS" },
+    { image: TypeScript, name: "TypeScript" },
+  ];
 
-                    <Col lg={6} >
-                        <Zoom>
-                            <div className='d-flex  text-center align-items-center justify-content-between mx-5 my-4' >
-                                <div className='me-4 html'>
-                                    <i class="fa-brands fa-html5 fs-1 mb-2"></i>
-                                    <p>HTML</p>
-                                </div>
-                                <div className='me-4 css'>
-                                    <i class="fa-brands fa-css3-alt fs-1 mb-2"></i>
-                                    <p>CSS</p>
-                                </div>
-                                <div className='react'>
-                                    <i class="fa-brands fa-react fs-1 mb-2"></i>
-                                    <p>REACT</p>
-                                </div>
-                            </div>
-                            <div className='d-flex  text-center align-items-center justify-content-between mx-5 my-3'>
-                                <div className='me-3 github'>
-                                    <i class="fa-brands fa-github fs-1 mb-2"></i>
-                                    <p>Github</p>
-                                </div>
-                                <div className='me-3 bootstrap'>
-                                    <i class="fa-brands fa-bootstrap fs-1 mb-2"></i>
-                                    <p>Bootstrap</p>
-                                </div>
-                                <div className='figma'>
-                                    <i class="fa-brands fa-figma fs-1 mb-2"></i>
-                                    <p>Figma</p>
-                                </div>
-                            </div>
-                        </Zoom>
-                    </Col>
+  return (
+    <section
+      className="experience bg-gray-900 text-white py-12 px-4 md:px-8"
+      id="Experience"
+    >
+      <Container>
+        <Row className="justify-content-center">
+          <Col xs={12} className="text-center mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold text-orange-500 mb-4">
+              Experience
+            </h1>
+            <div className="w-24 h-1 bg-orange-500 mx-auto rounded"></div>
+          </Col>
 
-                    <Col lg={6} className=''>
-                        <Zoom>
-                            <div className='experience-info my-5 rounded-4  d-flex'>
-                                <div >
-                                    <img src={goCode} alt="logo" className='w-75 my-4 rounded-5 ms-3' />
-                                </div>
-                                <div className='pt-4'>
-                                    <h3 className='fw-bold fs-2'>CEO Go Code</h3>
-                                    <p className='lead mt-3'>
-                                        for Web Site Projects
-                                    </p>
-                                    <p className='fs-5'>2019 - 2024</p>
-                                </div>
-                            </div>
-                        </Zoom>
-                    </Col>
-                </Row>
-            </Container>
-        </div>
-    )
-}
+          <Col xs={12} lg={6} className="mb-8 lg:mb-0">
+            <Zoom>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5  gap-4 rounded-full
+              md:gap-6 mx-auto max-w-3xl">
+                {skills.map((skill, index) => (
+                  <div
+                    key={index}
+                    className="flex flex-col items-center justify-center p-4 rounded-lg transition-transform transform hover:scale-105"
+                  >
+                    <img
+                      src={skill.image}
+                      alt={`${skill.name} logo`}
+                      className="w-12 h-12 md:w-16 md:h-16 object-contain mb-2 rounded-full"
+                    />
+                    <p className="text-sm md:text-base font-medium">
+                      {skill.name}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </Zoom>
+          </Col>
 
-export default Experience
+          <Col xs={12} lg={6}>
+            <Zoom>
+              <div className="experience-info bg-gray-800 rounded-xl p-6 flex flex-col md:flex-row items-center gap-6 shadow-xl hover:shadow-2xl transition-shadow">
+                <a href="https://merncore.com/en" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={goCode}
+                    alt="Merncore Logo"
+                    className="w-24 h-24 md:w-32 md:h-32 object-contain rounded-full"
+                  />
+                </a>
+                <div className="text-center md:text-left">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white">
+                    Founder & CEO of Merncore
+                  </h3>
+                  <p className="text-lg md:text-xl text-gray-300 mt-2">
+                    Building Innovative Tech Solutions
+                  </p>
+                  <p className="text-base md:text-lg text-gray-400 mt-1">
+                    Since 2019
+                  </p>
+                </div>
+              </div>
+            </Zoom>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  );
+};
+
+export default Experience;

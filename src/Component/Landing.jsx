@@ -34,7 +34,7 @@ const Landing = () => {
                         </h2>
                         <p className='font-mono mb-3'>with 2+ years of experience
                             <br />
-                            using React.
+                            using Nextjs.
                             <br />
                             Reach out if you'd like to learn more!
                         </p>
