@@ -18,6 +18,8 @@ import {
   newHome,
   coffee,
   amazon,
+  hexaa,
+  electric
 } from '../../src/imges/projects';
 
 
@@ -25,6 +27,24 @@ import {
 
 
 const projectsData = [
+   {
+    id: 15,
+    title: "Hexa Beach",
+    description: "A recreational beach for external guests, featuring a variety of restaurants and diverse beverages. It boasts a top-tier wave barrier on the North Coast.",
+    image: hexaa,
+    tag: ["All", "React"],
+    gitUrl: "https://www.hexabeach.com/",
+    previewUrl: "https://www.hexabeach.com/"
+  },
+   {
+    id: 14,
+    title: "Electric Charge",
+    description: "Specialized in importing, manufacturing, selling, and distributing electrical and lighting materials",
+    image: electric,
+    tag: ["All", "React"],
+    gitUrl: "https://www.electric-charge.com/",
+    previewUrl: "https://www.electric-charge.com/"
+  },
   {
     id: 13,
     title: "Amazon",

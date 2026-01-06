@@ -11,6 +11,8 @@ import mexant from './mexant.png'
 import newHome from './new-home.png'
 import coffee from './coffee.jpg'
 import amazon from './amazon.jpg'
+import hexaa from './hexaa.png'
+import electric from './electric.png'
 
 
 
@@ -28,4 +30,6 @@ export {
     newHome,
     coffee,
     amazon,
+    electric,
+    hexaa,
 };
